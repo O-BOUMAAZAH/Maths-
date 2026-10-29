@@ -137,7 +137,7 @@
             <strong>💳 Informations bancaires (RIB) :</strong><br>
             Banque : <span>Bank</span><br>
             RIB : <span>230XXXXXXXXXXXXXXXXXX</span><br>
-            Nom : <span>Boumaazah</span>
+            Nom : <span>...</span>
         </div>
 
         <div class="level-card vip-card" onclick="selectVipContent('cours')">
@@ -211,17 +211,21 @@
     let currentLevelKey = '';
 
     const dbData = {
-        '1AC': { cours: [], exercices: [], devoirs: [] },
+        '1AC': { cours: [ { title: 'Cours 1: Nombres décimaux positifs, Opératons', url: 'https://drive.google.com/file/d/1Sgllz8PSD4GyhK-w2-4TDk2Fh5PtVgJT/view?usp=drive_link' } ], 
+                exercices: [], devoirs: [] },
         '2AC': { cours: [], exercices: [], devoirs: [] },
         '3AC': { cours: [], exercices: [], devoirs: [] },
         'TCSF': {
             cours: [
                 { title: 'Cours 1: Ensemble des nombres IN et Notions en Arithmétique', url: 'https://drive.google.com/file/d/1-zf9phSVXixHbDRyU2MouNQ0I9vY0bjd/view?usp=drive_link' },
                 { title: 'Cours 2: Calcul vectoriel dans le Plan', url: 'https://drive.google.com/file/d/1hEm0XZ-CxKlZ6JqyfYUR6cSFWtZDdzDo/view?usp=drive_link' },
-                { title: 'Cours 3: Les ensembles de nombres', url: '#' }
+                { title: 'Cours 3: La Projection dans le plan', url: 'https://drive.google.com/file/d/1lZmnhsbiCiSoss2lrMv7fTRAz2i1fRZj/view?usp=drive_link' }
             ],
-            exercices: [{ title: 'Série 1: Arithmétique dans IN', url: '#' }],
-            devoirs: [{ title: 'Devoir maison N°1 - TCSF', url: '#' }]
+            exercices: [{ title: 'Série 1: Arithmétique dans IN', url: 'https://drive.google.com/file/d/1xRvCdW7898T_O0bjC87a663smfTzO1dl/view?usp=drive_link' }
+                       { title: 'Série 2: Calcul Vectoriel', url: 'https://drive.google.com/file/d/1jMTlWEaZvGftGiJxg6YY7V9FRA_74PKU/view?usp=drive_link' },
+                        { title: 'Série 3: La projection dans le plan', url: 'https://drive.google.com/file/d/1soOzzPrfZCAMEOjVkzNACsEN-tK3y9fq/view?usp=drive_link' }
+                       ],
+            devoirs: [{ title: 'Devoir maison N°1', url: 'https://drive.google.com/file/d/1gmEoeqZkJ7rXcFEBS114CImJlR7JrEvA/view?usp=drive_link' }]
         },
         'TCLF': { cours: [], exercices: [], devoirs: [] },
         '1BACSEF': {
